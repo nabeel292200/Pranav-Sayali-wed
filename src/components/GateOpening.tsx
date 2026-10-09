@@ -37,12 +37,6 @@ export function GateOpening({ opened, onOpen }: GateOpeningProps) {
           <div className="absolute inset-0 bg-royal mix-blend-color" />
           <div className="absolute inset-0 bg-royal-deep/35" />
           <div
-            className="jaali absolute inset-0 opacity-25"
-            style={{
-              backgroundPosition: side === 'left' ? 'left center' : 'right center',
-            }}
-          />
-          <div
             className={`absolute inset-y-0 w-px bg-gold/60 ${
               side === 'left' ? 'right-0' : 'left-0'
             }`}
@@ -93,11 +87,11 @@ export function GateOpening({ opened, onOpen }: GateOpeningProps) {
             className="relative flex items-center justify-center"
           >
             <img
-              src="/assets/sp-monogram.png"
-              alt="Sayali & Pranav Monogram Logo"
-              width="80"
-              height="80"
-              className="h-[4.75rem] w-[4.75rem] object-contain drop-shadow-[0_2px_8px_rgba(203,168,124,0.35)]"
+              src="/assets/ps-monogram.svg"
+              alt="Pranav & Sayali Monogram Logo"
+              width="88"
+              height="88"
+              className="h-20 w-20 object-contain drop-shadow-[0_2px_12px_rgba(201,158,92,0.45)]"
             />
           </motion.div>
         </div>

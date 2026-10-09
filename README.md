@@ -1,13 +1,13 @@
-# Sayali-Pranav-wed
+# Pranav-Sayali-wed
 
-An elegant, interactive engagement invitation web application for Sayali Bhosale & Pranav Sangle.
+An elegant, interactive engagement invitation web application for Pranav Sangle & Sayali Bhosale.
 
 ## Features
-- **Opening Gates:** Royal sliding gate doors with custom interlocking S & P monogram logo.
-- **Color Palette:** Luxury Black, Blush, Mauve, Plum, Ivory, and Champagne.
-- **Hero Section:** Couple portrait framed within an ornamental golden arch with Great Vibes cursive typography.
+- **Opening Gates:** Royal sliding gate doors with custom interlocking P & S monogram logo.
+- **Color Palette:** Groom's Theme featuring Burgundy, Dusty Rose, Baby Pink, Olive Green, Ivory, and Warm Antique Gold.
+- **Hero Section:** Couple portrait with Great Vibes and Cormorant Garamond typography.
 - **Save the Date:** Interactive HTML5 canvas scratch card with golden metallic foil.
-- **Family Blessings:** Bride & Groom family tribute cards.
+- **Family Blessings:** Groom & Bride family tribute cards honoring Sangle & Bhosale Family.
 - **Event Details:** Date, time, venue, RSVP dial link, and Google Calendar export.
 - **Venue & Maps:** Interactive map preview with direct navigation directions.
 - **Background Music:** Ambient wedding music with custom floating audio controller.

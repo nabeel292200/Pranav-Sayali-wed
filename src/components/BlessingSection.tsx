@@ -6,7 +6,6 @@ export function BlessingSection() {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-royal to-royal-deep px-5 py-20">
-      <div aria-hidden="true" className="jaali absolute inset-0 opacity-[0.12]" />
 
       <RevealOnScroll className="relative mx-auto max-w-md text-center">
         <div className="gold-rule mx-auto w-20" />

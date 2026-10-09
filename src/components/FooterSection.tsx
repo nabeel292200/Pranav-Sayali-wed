@@ -27,9 +27,9 @@ export function FooterSection() {
 
       <RevealOnScroll className="px-6">
         <p className="font-display text-[clamp(1.5rem,7.5vw,1.875rem)] tracking-[0.12em] whitespace-nowrap text-royal uppercase">
-          {couple.brideShort}{' '}
+          {couple.groomShort}{' '}
           <span className="text-gold">&amp;</span>{' '}
-          {couple.groomShort}
+          {couple.brideShort}
         </p>
 
         <div className="gold-rule mx-auto mt-5 w-24" />
@@ -49,10 +49,10 @@ export function FooterSection() {
             href="https://www.instagram.com/zetron.tech"
             target="_blank"
             rel="noreferrer"
-            className="group inline-flex items-center justify-center gap-2.5 text-[#582960] transition-opacity hover:opacity-80"
+            className="group inline-flex items-center justify-center gap-2.5 text-royal transition-opacity hover:opacity-80"
           >
-            <Instagram className="size-4 shrink-0 transition-transform group-hover:scale-110 text-[#582960]" strokeWidth={1.8} />
-            <span className="font-display text-[0.72rem] tracking-[0.38em] uppercase text-[#582960]">
+            <Instagram className="size-4 shrink-0 transition-transform group-hover:scale-110 text-royal" strokeWidth={1.8} />
+            <span className="font-display text-[0.72rem] tracking-[0.38em] uppercase text-royal">
               CRAFTED BY ZETRON.TECH
             </span>
           </a>

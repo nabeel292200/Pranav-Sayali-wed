@@ -55,12 +55,12 @@ export interface WeddingData {
 
 export const weddingData: WeddingData = {
   couple: {
-    brideShort: "Sayali",
     groomShort: "Pranav",
-    hashtag: "#SayaliPranav",
+    brideShort: "Sayali",
+    hashtag: "#PranavSayali",
   },
   invite: {
-    kicker: "With blessings of Bhosale & Sangle Family",
+    kicker: "With blessings of Sangle & Bhosale Family",
     line: "cordially invite you to celebrate their engagement",
   },
   families: {
@@ -76,7 +76,7 @@ export const weddingData: WeddingData = {
     },
   },
   event: {
-    title: "The Engagement of Sayali & Pranav",
+    title: "The Engagement of Pranav & Sayali",
     startsAt: "2026-10-25T11:00:00+05:30",
     endsAt: "2026-10-25T15:00:00+05:30",
     dateLabel: "25 . 10 . 2026",
@@ -118,9 +118,9 @@ export const weddingData: WeddingData = {
     line: "May your intentions be one, may your hearts beat as one.",
     translation:
       "Two families, one thread of gold — and a lifetime of happiness made luminous together.",
-    source: "With blessings of Bhosale & Sangle Family",
+    source: "With blessings of Sangle & Bhosale Family",
   },
   footer: {
-    families: "With blessings of Bhosale & Sangle Family",
+    families: "With blessings of Sangle & Bhosale Family",
   },
 };

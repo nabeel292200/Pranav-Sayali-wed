@@ -67,13 +67,13 @@ export function HeroSection() {
           className="mx-auto mt-3 flex items-baseline justify-center gap-[0.18em] font-display text-[clamp(2rem,10.5vw,4rem)] leading-none font-light whitespace-nowrap"
         >
           <span className="bg-gradient-to-b from-royal via-royal-deep to-royal bg-clip-text text-transparent">
-            {couple.brideShort}
+            {couple.groomShort}
           </span>
           <span className="font-script text-[1.25em] font-normal text-gold">
             &amp;
           </span>
           <span className="bg-gradient-to-b from-royal via-royal-deep to-royal bg-clip-text text-transparent">
-            {couple.groomShort}
+            {couple.brideShort}
           </span>
         </motion.h1>
 

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <defs>
+    <linearGradient id="psGoldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBF2DB" />
+      <stop offset="30%" stop-color="#DDB774" />
+      <stop offset="60%" stop-color="#BD8E3F" />
+      <stop offset="85%" stop-color="#E8CCA0" />
+      <stop offset="100%" stop-color="#C6994E" />
+    </linearGradient>
+    <filter id="foilGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#7A5214" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Delicate outer ring with floral compass ticks -->
+  <circle cx="80" cy="80" r="74" fill="none" stroke="url(#psGoldShine)" stroke-width="0.85" stroke-dasharray="4 3" opacity="0.6" />
+  <circle cx="80" cy="80" r="69" fill="none" stroke="url(#psGoldShine)" stroke-width="0.5" opacity="0.35" />
+
+  <!-- Four cardinal gold florets -->
+  <circle cx="80" cy="6" r="1.5" fill="url(#psGoldShine)" opacity="0.8" />
+  <circle cx="80" cy="154" r="1.5" fill="url(#psGoldShine)" opacity="0.8" />
+  <circle cx="6" cy="80" r="1.5" fill="url(#psGoldShine)" opacity="0.8" />
+  <circle cx="154" cy="80" r="1.5" fill="url(#psGoldShine)" opacity="0.8" />
+
+  <!-- Intertwined P and S monogram in luxury serif -->
+  <g filter="url(#foilGlow)" fill="url(#psGoldShine)">
+    <!-- Primary letter P -->
+    <text
+      x="59"
+      y="105"
+      font-family="'Cormorant Garamond', Georgia, serif"
+      font-size="82"
+      font-weight="400"
+      letter-spacing="-0.04em"
+      text-anchor="middle"
+    >P</text>
+
+    <!-- Interlocking letter S with delicate script serif italic -->
+    <text
+      x="99"
+      y="108"
+      font-family="'Cormorant Garamond', Georgia, serif"
+      font-size="70"
+      font-weight="400"
+      font-style="italic"
+      text-anchor="middle"
+      opacity="0.95"
+    >S</text>
+  </g>
+</svg>

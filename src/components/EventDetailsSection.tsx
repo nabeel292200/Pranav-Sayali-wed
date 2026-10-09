@@ -23,7 +23,6 @@ export function EventDetailsSection() {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-mist-deep to-mist px-5 py-20">
-      <div aria-hidden="true" className="jaali absolute inset-0 opacity-[0.10] invert" />
 
       <RevealOnScroll className="relative mx-auto max-w-md">
         <div className="paper-grain relative rounded-t-[9rem] border border-gold/50 bg-parchment px-7 pt-16 pb-10 text-center shadow-[0_30px_60px_-45px_var(--color-ink)]">
@@ -61,9 +60,14 @@ export function EventDetailsSection() {
           </p>
 
           {event.contact && (
-            <p className="mt-2 text-[0.68rem] tracking-[0.2em] text-ink/75 uppercase">
-              RSVP: <a href={`tel:${event.contact}`} className="text-gold font-medium hover:underline">{event.contact}</a>
-            </p>
+            <div className="mt-3 flex justify-center">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-olive/35 bg-olive/10 px-4 py-1 text-[0.68rem] tracking-[0.2em] text-olive-deep uppercase">
+                <span>RSVP:</span>
+                <a href={`tel:${event.contact}`} className="font-semibold text-royal hover:underline">
+                  {event.contact}
+                </a>
+              </span>
+            </div>
           )}
 
           <div className="relative mt-8 flex justify-center">

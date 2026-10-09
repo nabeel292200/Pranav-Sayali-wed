@@ -1,9 +1,9 @@
-const audioInstance = typeof Audio !== 'undefined' ? new Audio('/wedding-music.mp3') : null;
+const audioInstance = typeof Audio !== 'undefined' ? new Audio('/wedding-music.mp3?v=2') : null;
 
 if (audioInstance) {
   audioInstance.loop = true;
   audioInstance.volume = 0.6;
-  audioInstance.preload = 'none';
+  audioInstance.preload = 'auto';
 }
 
 export const audioService = {
