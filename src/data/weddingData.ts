@@ -77,13 +77,13 @@ export const weddingData: WeddingData = {
   },
   event: {
     title: "The Engagement of Pranav & Sayali",
-    startsAt: "2026-10-25T11:00:00+05:30",
-    endsAt: "2026-10-25T15:00:00+05:30",
+    startsAt: "2026-10-25T10:00:00+05:30",
+    endsAt: "2026-10-25T14:00:00+05:30",
     dateLabel: "25 . 10 . 2026",
     dayLabel: "Sunday",
-    timeLabel: "11 AM onwards",
+    timeLabel: "10 AM onwards",
     note: "Celebratory lunch to follow",
-    contact: "9881887547",
+    contact: "8788478079",
   },
   venue: {
     name: "GITAI Lawns & Banquets",

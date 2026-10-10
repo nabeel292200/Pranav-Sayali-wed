@@ -24,27 +24,45 @@
 
   <!-- Intertwined P and S monogram in luxury serif -->
   <g filter="url(#foilGlow)" fill="url(#psGoldShine)">
+    
+    <!-- Mask for S to create the intertwining effect (P goes over S in bottom half) -->
+    <mask id="interlock-mask">
+      <rect x="0" y="0" width="160" height="160" fill="white" />
+      <rect x="0" y="90" width="160" height="70" fill="black" />
+    </mask>
+
+    <!-- Bottom part of S (rendered first, so P covers it) -->
+    <text
+      x="88"
+      y="110"
+      font-family="'Cormorant Garamond', Georgia, serif"
+      font-size="78"
+      font-weight="400"
+      font-style="italic"
+      text-anchor="middle"
+    >S</text>
+
     <!-- Primary letter P -->
     <text
-      x="59"
-      y="105"
+      x="68"
+      y="106"
       font-family="'Cormorant Garamond', Georgia, serif"
-      font-size="82"
+      font-size="94"
       font-weight="400"
       letter-spacing="-0.04em"
       text-anchor="middle"
     >P</text>
 
-    <!-- Interlocking letter S with delicate script serif italic -->
+    <!-- Top part of S (rendered last, so it covers P) -->
     <text
-      x="99"
-      y="108"
+      x="88"
+      y="110"
       font-family="'Cormorant Garamond', Georgia, serif"
-      font-size="70"
+      font-size="78"
       font-weight="400"
       font-style="italic"
       text-anchor="middle"
-      opacity="0.95"
+      mask="url(#interlock-mask)"
     >S</text>
   </g>
 </svg>
