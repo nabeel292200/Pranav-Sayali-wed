@@ -63,7 +63,10 @@ export function GateOpening({ opened, onOpen }: GateOpeningProps) {
           </p>
         </motion.div>
 
-        <div className="relative mt-7 sm:mt-9 flex h-44 w-44 items-center justify-center">
+        <div
+          className="relative mt-7 sm:mt-9 flex h-44 w-44 items-center justify-center"
+          style={{ width: '11rem', height: '11rem' }}
+        >
           {/* Subtle vertical light beam and guide lines passing through center */}
           <div
             className="pointer-events-none absolute w-14 blur-sm"
@@ -169,7 +172,7 @@ export function GateOpening({ opened, onOpen }: GateOpeningProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
           whileTap={{ scale: 0.96 }}
-          className="group relative mt-10 sm:mt-12 cursor-pointer overflow-hidden rounded-full border border-gold/70 px-9 py-3.5 text-[0.62rem] tracking-[0.35em] text-parchment uppercase transition-colors hover:bg-gold/15"
+          className="group relative mt-12 sm:mt-14 cursor-pointer overflow-hidden rounded-full border border-gold/70 px-9 py-3.5 text-[0.62rem] tracking-[0.35em] text-parchment uppercase transition-colors hover:bg-gold/15"
         >
           <motion.span
             animate={{ x: ['-120%', '120%'] }}
