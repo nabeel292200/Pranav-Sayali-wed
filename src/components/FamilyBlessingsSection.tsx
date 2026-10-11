@@ -32,20 +32,11 @@ export function FamilyBlessingsSection() {
                   }`}
                 >
                   <div className="sm:w-1/2">
-                    <div className="relative overflow-hidden rounded-t-[3rem] border border-gold/70 bg-parchment px-6 pt-12 pb-8 text-center shadow-[0_18px_40px_-24px_black]">
+                    <div className="relative overflow-hidden rounded-t-[3rem] border border-gold/70 bg-parchment px-6 pt-14 pb-8 text-center shadow-[0_18px_40px_-24px_black]">
                       <div className="pointer-events-none absolute inset-x-2 top-2 bottom-2 rounded-t-[2.6rem] border border-gold/30" />
-                      <div className="relative flex justify-center">
-                        <span
-                          className={`inline-flex items-center justify-center rounded-full px-4 py-1.5 text-[0.65rem] leading-none tracking-[0.28em] uppercase font-medium ${
-                            idx === 0
-                              ? 'border border-olive/40 bg-olive/15 text-olive-deep'
-                              : 'border border-dusty-rose/40 bg-dusty-rose/15 text-dusty-rose'
-                          }`}
-                          style={{ paddingRight: 'calc(1rem - 0.28em)' }}
-                        >
-                          {family.label}
-                        </span>
-                      </div>
+                      <p className="relative text-[0.6rem] tracking-[0.35em] text-gold uppercase">
+                        {family.label}
+                      </p>
                       <p className="relative mt-3 font-display text-3xl text-royal">
                         {family.name}
                       </p>

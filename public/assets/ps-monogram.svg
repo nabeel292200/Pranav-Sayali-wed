@@ -12,7 +12,7 @@
     </filter>
   </defs>
 
-  <!-- Delicate outer ring with floral compass ticks -->
+  <!-- Outer delicate dashed rings -->
   <circle cx="80" cy="80" r="74" fill="none" stroke="url(#psGoldShine)" stroke-width="0.85" stroke-dasharray="4 3" opacity="0.6" />
   <circle cx="80" cy="80" r="69" fill="none" stroke="url(#psGoldShine)" stroke-width="0.5" opacity="0.35" />
 
@@ -22,47 +22,6 @@
   <circle cx="6" cy="80" r="1.5" fill="url(#psGoldShine)" opacity="0.8" />
   <circle cx="154" cy="80" r="1.5" fill="url(#psGoldShine)" opacity="0.8" />
 
-  <!-- Intertwined P and S monogram in luxury serif -->
-  <g filter="url(#foilGlow)" fill="url(#psGoldShine)">
-    
-    <!-- Mask for S to create the intertwining effect (P goes over S in bottom half) -->
-    <mask id="interlock-mask">
-      <rect x="0" y="0" width="160" height="160" fill="white" />
-      <rect x="0" y="90" width="160" height="70" fill="black" />
-    </mask>
-
-    <!-- Bottom part of S (rendered first, so P covers it) -->
-    <text
-      x="88"
-      y="110"
-      font-family="'Cormorant Garamond', Georgia, serif"
-      font-size="78"
-      font-weight="400"
-      font-style="italic"
-      text-anchor="middle"
-    >S</text>
-
-    <!-- Primary letter P -->
-    <text
-      x="68"
-      y="106"
-      font-family="'Cormorant Garamond', Georgia, serif"
-      font-size="94"
-      font-weight="400"
-      letter-spacing="-0.04em"
-      text-anchor="middle"
-    >P</text>
-
-    <!-- Top part of S (rendered last, so it covers P) -->
-    <text
-      x="88"
-      y="110"
-      font-family="'Cormorant Garamond', Georgia, serif"
-      font-size="78"
-      font-weight="400"
-      font-style="italic"
-      text-anchor="middle"
-      mask="url(#interlock-mask)"
-    >S</text>
-  </g>
+  <!-- Authentic interlocking SP monogram logo -->
+  <image href="/assets/sp-monogram.png" x="24" y="24" width="112" height="112" preserveAspectRatio="xMidYMid meet" filter="url(#foilGlow)" />
 </svg>

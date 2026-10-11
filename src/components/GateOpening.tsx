@@ -63,23 +63,89 @@ export function GateOpening({ opened, onOpen }: GateOpeningProps) {
           </p>
         </motion.div>
 
-        <div className="relative mt-7 sm:mt-9 flex h-40 w-40 items-center justify-center">
+        <div className="relative mt-7 sm:mt-9 flex h-44 w-44 items-center justify-center">
+          {/* Subtle vertical light beam and guide lines passing through center */}
+          <div
+            className="pointer-events-none absolute w-14 blur-sm"
+            style={{
+              top: '-5rem',
+              bottom: '-5rem',
+              background: 'linear-gradient(to right, transparent, rgba(212, 175, 110, 0.2), transparent)',
+            }}
+          />
+          <div
+            className="pointer-events-none absolute w-[46px]"
+            style={{
+              top: '-3.5rem',
+              bottom: '-3.5rem',
+              borderLeft: '1px solid rgba(212, 175, 110, 0.3)',
+              borderRight: '1px solid rgba(212, 175, 110, 0.3)',
+            }}
+          />
+          <div
+            className="pointer-events-none absolute w-px"
+            style={{
+              top: '-2.5rem',
+              bottom: '-2.5rem',
+              background: 'rgba(212, 175, 110, 0.45)',
+            }}
+          />
+
+          {/* Outermost hairline circle */}
+          <div
+            className="absolute rounded-full pointer-events-none"
+            style={{
+              inset: '-8px',
+              border: '1px solid rgba(212, 175, 110, 0.22)',
+            }}
+          />
+
+          {/* Rotating dashed ring */}
           <motion.span
             animate={{ rotate: 360 }}
             transition={{ duration: 46, repeat: Infinity, ease: 'linear' }}
-            className="absolute inset-0 rounded-full border border-dashed border-gold/45"
+            className="absolute rounded-full"
+            style={{
+              inset: '0px',
+              border: '1px dashed rgba(212, 175, 110, 0.45)',
+            }}
           />
+
+          {/* Central translucent plate with wine/parchment glass and gold rim */}
           <motion.span
             initial={{ scale: 0.7, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1.2, delay: 0.15, ease: EASE_GATE }}
-            className="absolute inset-4 rounded-full border border-gold/70 bg-parchment/10 backdrop-blur-[2px]"
+            style={{
+              inset: '12px',
+              background: 'radial-gradient(circle, rgba(125, 58, 80, 0.55) 0%, rgba(75, 26, 44, 0.65) 100%)',
+              border: '1.2px solid rgba(212, 175, 110, 0.75)',
+              boxShadow: 'inset 0 0 16px rgba(212, 175, 110, 0.22)',
+              backdropFilter: 'blur(3px)',
+            }}
+            className="absolute rounded-full"
           />
+
+          {/* Subtle inner concentric hairline ring */}
+          <span
+            className="absolute rounded-full pointer-events-none"
+            style={{
+              inset: '20px',
+              border: '1px solid rgba(212, 175, 110, 0.35)',
+            }}
+          />
+
+          {/* Gentle breathing glow ring */}
           <motion.span
-            animate={{ scale: [1, 1.16, 1], opacity: [0.35, 0, 0.35] }}
+            animate={{ scale: [1, 1.06, 1], opacity: [0.35, 0, 0.35] }}
             transition={{ duration: 3.4, repeat: Infinity, ease: 'easeInOut' }}
-            className="absolute inset-4 rounded-full border border-gold"
+            style={{
+              inset: '12px',
+              border: '1px solid rgba(212, 175, 110, 0.8)',
+            }}
+            className="absolute rounded-full pointer-events-none"
           />
+
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -87,11 +153,11 @@ export function GateOpening({ opened, onOpen }: GateOpeningProps) {
             className="relative flex items-center justify-center"
           >
             <img
-              src="/assets/ps-monogram.svg"
-              alt="Pranav & Sayali Monogram Logo"
-              width="88"
-              height="88"
-              className="h-20 w-20 object-contain drop-shadow-[0_2px_12px_rgba(201,158,92,0.45)]"
+              src="/assets/sp-monogram.png"
+              alt="Sayali & Pranav Monogram Logo"
+              width="96"
+              height="96"
+              className="h-24 w-24 object-contain drop-shadow-[0_2px_12px_rgba(203,168,124,0.45)]"
             />
           </motion.div>
         </div>
